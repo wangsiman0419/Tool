@@ -1,0 +1,92 @@
+@import '../common/style/var.less';
+@import '../common/style/theme.less';
+
+.van-card {
+  position: relative;
+  box-sizing: border-box;
+  padding: 5px 15px;
+  font-size: 12px;
+  .theme(color, '@text-color');
+  .theme(background-color, '@background-color-light');
+
+  &__header {
+    display: flex;
+
+    &--center {
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__thumb {
+    position: relative;
+    flex: none;
+    width: 90px;
+    height: 90px;
+    margin-right: 10px;
+
+    &:empty {
+      display: none;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__content {
+    position: relative;
+    flex: 1;
+    min-width: 0; /* hack for flex box ellipsis */
+  }
+
+  &__title,
+  &__desc {
+    word-wrap: break-word;
+  }
+
+  &__title {
+    font-weight: bold;
+    line-height: 16px;
+  }
+
+  &__desc {
+    line-height: 20px;
+    .theme(color, '@gray-darker');
+  }
+
+  &__bottom {
+    line-height: 20px;
+  }
+
+  &__price {
+    display: inline-block;
+    font-weight: bold;
+    .theme(color, '@red');
+  }
+
+  &__origin-price {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 10px;
+    text-decoration: line-through;
+    .theme(color, '@gray-darker');
+  }
+
+  &__num {
+    float: right;
+  }
+
+  &__tag {
+    position: absolute;
+    top: 2px;
+    left: 0;
+  }
+
+  &__footer {
+    flex: none;
+    width: 100%;
+    text-align: right;
+  }
+}

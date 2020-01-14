@@ -1,0 +1,7 @@
+page {
+  background-color: #fff;
+}
+
+.custom-sidebar {
+  margin-left: 15px;
+}

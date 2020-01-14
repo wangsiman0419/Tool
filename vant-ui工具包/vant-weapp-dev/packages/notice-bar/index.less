@@ -1,0 +1,59 @@
+.van-notice-bar {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 15px;
+  font-size: 14px;
+  line-height: 24px;
+
+  &--withicon {
+    position: relative;
+    padding-right: 40px;
+  }
+
+  &--wrapable {
+    height: auto;
+    padding: 8px 15px;
+
+    .van-notice-bar {
+      &__wrap {
+        height: auto;
+      }
+
+      &__content {
+        position: relative;
+        white-space: normal;
+      }
+    }
+  }
+
+  &__left-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 4px;
+    vertical-align: middle;
+  }
+
+  &__right-icon {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 16px;
+  }
+
+  &__wrap {
+    position: relative;
+    flex: 1;
+    height: 24px;
+    overflow: hidden;
+  }
+
+  &__content {
+    position: absolute;
+    white-space: nowrap;
+
+    &.van-ellipsis {
+      max-width: 100%;
+    }
+  }
+}
