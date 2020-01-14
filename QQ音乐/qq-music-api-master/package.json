@@ -1,0 +1,43 @@
+{
+  "name": "qq-music-api",
+  "version": "1.0.0",
+  "description": "qq music api, just for study",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "docs": "docsify serve docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Rain120/qq-music-api.git"
+  },
+  "keywords": [
+    "QQ音乐",
+    "音乐",
+    "QQ音乐koa2"
+  ],
+  "author": "Rain120",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Rain120/qq-music-api/issues"
+  },
+  "homepage": "https://github.com/Rain120/qq-music-api#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-transform-async-to-generator": "^7.4.4",
+    "@babel/register": "^7.4.4",
+    "colors": "^1.3.3"
+  },
+  "engines": {
+    "node": ">=7.6.0"
+  }
+}
